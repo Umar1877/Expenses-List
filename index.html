@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expenses List</h1>
+        <hr class="divider">
+        <div class="expense-form">
+            <h2>Create Expense</h2>
+            <label for="expense-label">Expense Label</label>
+            <input type="text" id="expense-label" placeholder="Enter expense label" required>
+            <label for="expense-amount">Expense Amount</label>
+            <input type="number" id="expense-amount" placeholder="Enter expense amount" required>
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+        <div class="expense-list">
+            <h2>Expenses List</h2>
+            <ul id="expense-list">
+            </ul>
+            <h3>Please add and select the item to modify</h3
+        </div>
+       
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

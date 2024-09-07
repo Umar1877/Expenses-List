@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: white;
+    padding: 100px;
+    align-items: center;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+h3{
+    text-align: center;
+    color: #aaa7a7dc;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+    margin-bottom: 20px;
+    border: none;
+    margin-bottom: 90px;
+}
+
+.expense-form label {
+    display: block;
+    margin: 10px 0 5px;
+    padding-left: 50px;
+}
+
+.expense-form input {
+    width: 100%;
+    padding: 8px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.expense-form button {
+    width: 50%;
+    margin-left: 140px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.expense-form button:hover{
+    background-color: #3e4347; 
+}
+
+.icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    margin: 10px;
+    color: #444;
+}
+
+.icon-button i {
+    font-size: 24px;
+}
+
+.delete-button {
+    color: rgb(238, 88, 88);
+}
+
+.icon-button:hover {
+    color: #007bff; 
+}
+
+.delete-button:hover {
+    color: rgb(220, 0, 0); 
+}
+
+.expense-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.expense-list li {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: space-between;
+    border: white;
+}
+
+.expense-list li input[type="radio"] {
+    margin-right: 0px;
+}
+.expense-list li {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: white;
+    position: relative;
+}
+
+.expense-list li input[type="radio"] {
+    margin-right: 10px;
+}
+
+.expense-list li .fas {
+    margin-left: 0px;
+    color: #444;
+    cursor: pointer;
+    visibility: hidden; 
+}
+
+.expense-list li.selected .fas {
+    visibility: visible; 
+}
+
+.expense-list li .fas:hover {
+    color: #007bff; 
+}
+
+.expense-list li .fas.fa-trash-alt:hover {
+    color: rgb(220, 0, 0); 
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
